@@ -23,6 +23,7 @@ body{
     display: flex;
     justify-content: flex-end;
     padding: 15px;
+    height: 70px;
     margin-bottom: 20px;
     background-color: black;
     color: white;
