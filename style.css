@@ -19,7 +19,6 @@ body{
 }
 
 #display {
-    border: solid 1px black ;
     padding: 15px;
     margin-bottom: 5px;
     text-align: right;
@@ -49,5 +48,13 @@ button {
 
 button:hover{
     background-color: rgba(153, 205, 50, 0.459);
+}
+
+footer{
+    background-color: teal;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 13pt;
 }
 
