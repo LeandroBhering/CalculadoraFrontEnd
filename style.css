@@ -7,12 +7,12 @@
 }
 
 body{
-   background-color: rgb(238, 238, 138);
+   background-image: linear-gradient(to top right,rgb(30, 2, 39), 600px,rgb(8, 206, 255), rgb(30, 2, 39));
 }
 
 #calculadora {
     width: 400px;
-    background-color: teal;
+    background-color: rgb(2, 180, 180);
     padding: 25px;
     margin: 100px auto;
     border-radius: 10px;
