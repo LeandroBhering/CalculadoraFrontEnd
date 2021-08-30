@@ -15,6 +15,7 @@ body{
     padding: 20px;
     margin: 50px auto;
     border-radius: 10px;
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.514);
 }
 
 #display {
@@ -26,6 +27,8 @@ body{
     color: white;
     font-size: 30pt;
     border-radius: 5px;
+    font-family: serif;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.377);
 }
 
 #calcButoes{
@@ -41,9 +44,10 @@ button {
     font-size: 15pt;
     border-radius: 10px;
     border: none;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.377);
 }
 
 button:hover{
-    background-color: yellowgreen;
+    background-color: rgba(153, 205, 50, 0.459);
 }
 
