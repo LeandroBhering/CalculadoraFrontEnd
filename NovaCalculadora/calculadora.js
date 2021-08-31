@@ -1,9 +1,6 @@
-
-
 function inserirOpr(operador) {
     var opr = document.getElementById('display').innerHTML
               document.getElementById('display').innerHTML += operador
-
 }
 
 function inserirNum (numero) {
@@ -23,4 +20,4 @@ function apagar() {
 function calcular() {
     var resultado = document.getElementById('display').innerHTML
         document.getElementById('display').innerHTML = eval(resultado)    
-}
+} 
