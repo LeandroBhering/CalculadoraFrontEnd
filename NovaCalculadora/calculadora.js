@@ -16,6 +16,11 @@ function limpar() {
 }
 
 function apagar() {
-    var conteudoDisplay = getElementById('display').innerHTML
+    var conteudoDisplay = document.getElementById('display').innerHTML
         document.getElementById('display').innerHTML = conteudoDisplay.substring(0, conteudoDisplay.length -1)
+}
+
+function calcular() {
+    var resultado = document.getElementById('display').innerHTML
+        document.getElementById('display').innerHTML = eval(resultado)    
 }
