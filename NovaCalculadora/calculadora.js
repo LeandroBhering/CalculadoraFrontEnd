@@ -25,19 +25,15 @@ function calcular() {
 */
 
 var display = document.getElementById('display')
-var numeros = []
-var operadores = []
 
 function inserirNum(num) {
-    numeros.push(Number(num))
     display.innerHTML += num
 }
 
 function inserirOpr(opr) {
-    operadores
-    if (numeros.length == Number()){
+
     display.innerHTML += opr
-    }
+
 }
 
 function limpar() {
@@ -47,5 +43,6 @@ function limpar() {
 function apagar() {
     
 }
-console.log(numeros)
 
+console.log(primeiroNum)
+console.log(segundoNum)
