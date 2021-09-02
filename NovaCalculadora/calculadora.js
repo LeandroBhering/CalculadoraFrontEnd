@@ -35,6 +35,7 @@ function inserirNum(num) {
 }
 
 function inserirOpr(opr) {
+    
     segundoNum = display.innerHTML
     operador = opr
     display.innerHTML += opr
