@@ -1,3 +1,4 @@
+/*
 function inserirOpr(operador) {
     var opr = document.getElementById('display').innerHTML
               document.getElementById('display').innerHTML += operador
@@ -21,3 +22,25 @@ function calcular() {
     var resultado = document.getElementById('display').innerHTML
         document.getElementById('display').innerHTML = eval(resultado)    
 } 
+*/
+
+var display = document.getElementById('display')
+
+
+function inserirNum(num) {
+    var numeros = [num]
+    display.innerHTML += num
+    console.log(numeros)
+}
+
+function inserirOpr(opr) {
+    var operadores = [opr]
+    if (display.length === numeros){
+    display.innerHTML += opr
+    }
+}
+
+function limpar() {
+    display.innerHTML = ''
+}
+
