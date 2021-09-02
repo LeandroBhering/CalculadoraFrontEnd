@@ -25,24 +25,30 @@ function calcular() {
 */
 
 var display = document.getElementById('display')
+var primeiroNum 
+var segundoNum 
+var operador
+
 
 function inserirNum(num) {
     display.innerHTML += num
 }
 
 function inserirOpr(opr) {
-
+    segundoNum = display.innerHTML
+    operador = opr
     display.innerHTML += opr
-
+    console.log(operador)
+    console.log(segundoNum)
 }
 
 function limpar() {
     display.innerHTML = ''
 }
 
-function apagar() {
-    
+function apagar() { 
 }
 
-console.log(primeiroNum)
-console.log(segundoNum)
+
+
+
