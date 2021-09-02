@@ -25,17 +25,17 @@ function calcular() {
 */
 
 var display = document.getElementById('display')
-
+var numeros = []
+var operadores = []
 
 function inserirNum(num) {
-    var numeros = [num]
+    numeros.push(Number(num))
     display.innerHTML += num
-    console.log(numeros)
 }
 
 function inserirOpr(opr) {
-    var operadores = [opr]
-    if (display.length === numeros){
+    operadores
+    if (numeros.length == Number()){
     display.innerHTML += opr
     }
 }
@@ -43,4 +43,9 @@ function inserirOpr(opr) {
 function limpar() {
     display.innerHTML = ''
 }
+
+function apagar() {
+    
+}
+console.log(numeros)
 
