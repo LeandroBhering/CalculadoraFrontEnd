@@ -1,5 +1,6 @@
 'use strict'
 
+// Armazenando os elemento HTML em variaveis.
 const display = document.getElementById('display')
 const numeros = document.querySelectorAll('[id*=tecla]')
 const operadores = document.querySelectorAll('[id*=operador]')
@@ -8,7 +9,14 @@ var novoNumero = true
 var operador 
 var numeroAnterior 
 
+// Inserindo um evento (onclick="inserirNumero") nos elementos HTML
+numeros.forEach(numero => numero.addEventListener('click', inserirNumero))
+operadores.forEach(operador => operador.addEventListener('click',selecionarOperador))
 
+//
+const inserirNumero = (evento) => atualizarDisplay(evento.target.textContent)
+
+//
 const atualizarDisplay = (texto) => {
     if (novoNumero){
         display.textContent = texto
@@ -18,9 +26,7 @@ const atualizarDisplay = (texto) => {
     }
 }
 
-const inserirNumero = (evento) => atualizarDisplay(evento.target.textContent)
-numeros.forEach(numero => numero.addEventListener('click', inserirNumero))
-
+//
 const selecionarOperador = (evento) => {
     if (!novoNumero){
         novoNumero = true
@@ -29,5 +35,5 @@ const selecionarOperador = (evento) => {
         console.log(numeroAnterior, operador)
     }
 }
-operadores.forEach(operador => operador.addEventListener('click',selecionarOperador))
+
 
