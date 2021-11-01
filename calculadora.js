@@ -7,7 +7,7 @@ const operadores = document.querySelectorAll('[id*=operador]')
 
 var novoNumero = true
 var operador 
-var numeroAnterior 
+var numeroAnterior  
 
 
 const atualizarDisplay = (texto) => {
