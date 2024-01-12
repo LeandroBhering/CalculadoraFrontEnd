@@ -24,14 +24,15 @@ function calcular() {
 } 
 */
 
-var display = document.getElementById('display')
+var display = document.getElementById("display")
+var valorDisplay = display.innerText
 var primeiroNum 
 var segundoNum 
 var operador
 
 
 function inserirNum(num) {
-    display.innerHTML += num
+    display.innerHTML+= num
 }
 
 function inserirOpr(opr) {
